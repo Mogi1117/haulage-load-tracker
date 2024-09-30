@@ -1,14 +1,14 @@
 {
   "expo": {
-    "name": "load-app",
+    "name": "Haulage load tracker",
     "slug": "load-app",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "version": "1.0.7",
+    "orientation": "landscape",
+    "icon": "./assets/images/loader.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "splash": {
-      "image": "./assets/images/splash.png",
+      "image": "./assets/images/loader-splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -17,20 +17,29 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/images/loader.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.cravern.haulageloadtracker"
     },
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/loader.png"
     },
     "plugins": [
       "expo-router"
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "216e12ee-0e94-4e77-9337-97b7083cd71e"
+      }
     }
   }
 }
